@@ -1,14 +1,19 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
+using Nest;
 using System.Linq;
+using TalksApi.Atribute;
 using TalksApi.Entitie;
 using TalksApi.Models.Contratos;
 using TalksApi.Repository;
 
 namespace TalksApi.Controllers
+
 {
+	[ApiKey]
 	[Route("api/[controller]")]
 	[ApiController]
+	
 	public class CostumerController : ControllerBase
 	{
 

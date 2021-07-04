@@ -5,7 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NovaPasta\**" />
+    <Content Remove="NovaPasta\**" />
+    <EmbeddedResource Remove="NovaPasta\**" />
+    <None Remove="NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NEST" Version="7.13.1" />
   </ItemGroup>
 
 
