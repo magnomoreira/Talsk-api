@@ -59,6 +59,10 @@ namespace TalksApi.Controllers
 
 		public IActionResult Put(string id, CostumerRequest request)
 		{
+
+			if (ModelState.IsValid == false)
+				return BadRequest();
+
 			var costumer = _costumerRepository.GetById(id);
 
 			if (costumer == null)
@@ -77,6 +81,9 @@ namespace TalksApi.Controllers
 
 		public IActionResult Delete(string id)
 		{
+			if (ModelState.IsValid == false)
+				return BadRequest();
+
 			var costumer = _costumerRepository.GetById(id);
 
 			if (costumer == null)
