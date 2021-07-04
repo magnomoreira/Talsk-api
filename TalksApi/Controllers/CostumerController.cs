@@ -1,14 +1,23 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
+using Nest;
 using System.Linq;
+using TalksApi.Atribute;
+=======
+using System.Linq;
+>>>>>>> master
 using TalksApi.Entitie;
 using TalksApi.Models.Contratos;
 using TalksApi.Repository;
 
 namespace TalksApi.Controllers
+
 {
+
 	[Route("api/[controller]")]
 	[ApiController]
+	
 	public class CostumerController : ControllerBase
 	{
 
@@ -59,6 +68,13 @@ namespace TalksApi.Controllers
 
 		public IActionResult Put(string id, CostumerRequest request)
 		{
+<<<<<<< HEAD
+
+			if (ModelState.IsValid == false)
+				return BadRequest();
+
+=======
+>>>>>>> master
 			var costumer = _costumerRepository.GetById(id);
 
 			if (costumer == null)
@@ -77,6 +93,12 @@ namespace TalksApi.Controllers
 
 		public IActionResult Delete(string id)
 		{
+<<<<<<< HEAD
+			if (ModelState.IsValid == false)
+				return BadRequest();
+
+=======
+>>>>>>> master
 			var costumer = _costumerRepository.GetById(id);
 
 			if (costumer == null)
