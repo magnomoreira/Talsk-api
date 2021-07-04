@@ -12,7 +12,7 @@ namespace TalksApi.Entitie
 		public Costumer(CostumerRequest request)
 		{
 			var randon = new Random();
-			ExternalId = "" + randon.Next(9999999);
+			ExternalId = "cus_" + randon.Next(9999999);
 			Name = request.Name;
 			Email = request.Email;
 			Document = request.Document;
