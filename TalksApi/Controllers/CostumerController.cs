@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TalksApi.Entitie;
+using TalksApi.Models.Contratos;
 
 namespace TalksApi.Controllers
 {
@@ -12,8 +14,10 @@ namespace TalksApi.Controllers
 	public class CostumerController : ControllerBase
 	{
 		[HttpPost]
-		public IActionResult Post()
+		public IActionResult Post(CostumerRequest request)
 		{
+
+			var costumer = new Costumer(request);
 			return Ok();
 		}
 	}
