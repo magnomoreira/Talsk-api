@@ -11,7 +11,7 @@ namespace TalksApi.Atribute
 {
 
 	[AttributeUsage(validOn: AttributeTargets.Class)]
-	public class ApkeyAtribute : Attribute, IAsyncActionFilter
+	public class ApikeyAtribute : Attribute, IAsyncActionFilter
 	{
 
 		private const string APIKEY_HAPE = "ApiKey";

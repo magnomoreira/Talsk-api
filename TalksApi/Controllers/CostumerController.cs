@@ -10,7 +10,7 @@ using TalksApi.Repository;
 namespace TalksApi.Controllers
 
 {
-	[ApiKey]
+
 	[Route("api/[controller]")]
 	[ApiController]
 	
