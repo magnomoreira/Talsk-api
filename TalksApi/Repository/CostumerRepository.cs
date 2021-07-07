@@ -6,26 +6,26 @@ using TalksApi.Entitie;
 
 namespace TalksApi.Repository
 {
-	public class CostumerRepository
+	public class CustumerRepository
 	{
-		public static IList<Costumer> costumers = new List<Costumer>();
+		public static IList<Custumer> costumers = new List<Custumer>();
 
-		public Costumer GetById(string id)
+		public Custumer GetById(string id)
 		{
 			return costumers.FirstOrDefault(i => i.ExternalId == id);
 		}
 
-		public IList<Costumer> Getall()
+		public IList<Custumer> Getall()
 		{
 			return costumers;
 		}
 
-		public bool Save(Costumer costumer)
+		public bool Save(Custumer costumer)
 		{
 			costumers.Add(costumer);
 			return true;
 		}
-		public bool Update(Costumer costumer)
+		public bool Update(Custumer costumer)
 		{
 			var costumerDelete = costumers.FirstOrDefault(x => x.ExternalId == costumer.ExternalId);
 			costumers.Remove(costumerDelete);

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace TalksApi.Models.Contratos
 {
-	public class CostumerResponse
+	public class CustumerResponse
 	{
 		public string Id { get; set; }
 		public string Name { get; set; }

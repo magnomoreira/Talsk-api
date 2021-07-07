@@ -6,10 +6,10 @@ using TalksApi.Models.Contratos;
 
 namespace TalksApi.Entitie
 {
-	public class Costumer
+	public class Custumer
 	{
 
-		public Costumer(CostumerRequest request)
+		public Custumer(CustumerRequest request)
 		{
 			var randon = new Random();
 			ExternalId = "cus_" + randon.Next(9999999);
@@ -28,7 +28,7 @@ namespace TalksApi.Entitie
 		public string Document { get; set; }
 		public string DocumentType { get; set; }
 
-		public void Update(CostumerRequest request)
+		public void Update(CustumerRequest request)
 		{
 			Name = request.Name;
 			Email = request.Email;

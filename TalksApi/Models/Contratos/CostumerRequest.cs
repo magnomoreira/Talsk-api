@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TalksApi.Models.Contratos
 {
-	public class CostumerRequest
+	public class CustumerRequest
 	{
 		[Required(ErrorMessage ="Name is invalid")]
 		public string Name { get; set; }
